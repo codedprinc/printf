@@ -11,8 +11,7 @@ betty $ff
 echo " "
 echo " "
 
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 $ff
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 $ff
 
 echo " "
 echo " "
-
