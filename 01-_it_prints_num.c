@@ -37,7 +37,7 @@ int _printsNumbers(int n_n)
 		{
 			dig_t = num / ex;
 			_putchar(dig_t + '0');
-			num = num - ((dig_t) * (ex));
+			num = num - ((dig_t) *(ex));
 			ex /= 10;
 			i++;
 		}

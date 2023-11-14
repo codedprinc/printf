@@ -25,8 +25,9 @@ int _printf(const char *format, ...)
 			{
 			case 'c':
 			{
-				format++;
 				char ract = va_arg(c_n, int);
+
+				format++;
 
 				_putchar(ract);
 				argc++;
@@ -35,9 +36,9 @@ int _printf(const char *format, ...)
 
 			case 's':
 			{
-				format++;
-
 				char *sent = va_arg(c_n, char *);
+
+				format++;
 				_printsString(sent);
 				argc += _strlen(sent);
 			}
@@ -53,16 +54,21 @@ int _printf(const char *format, ...)
 
 			case 'd':
 			{
+				int new = va_arg(c_n, int);
 
 				format++;
-				int new = va_arg(c_n, int);
+
 				_printsNumbers(new);
 				argc++;
 			}
+			break;
+
 			case 'i':
 			{
-				format++;
+
 				int new = va_arg(c_n, int);
+
+				format++;
 				_printsNumbers(new);
 				argc++;
 			}
