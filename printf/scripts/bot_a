@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "file name"
+read ff
+
+echo " "
+echo " "
+
+betty $ff
+
+echo " "
+echo " "
+
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 $ff
+
+echo " "
+echo " "
