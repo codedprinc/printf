@@ -1,0 +1,23 @@
+#!/bin/bash
+
+git add .
+
+echo " "
+echo " "
+
+echo "Write commit message"
+read mess
+
+echo " "
+
+git commit -m "$mess"
+
+echo " "
+
+git push
+
+echo " "
+
+echo "Local repo has been PUSHED !"
+
+
