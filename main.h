@@ -1,11 +1,6 @@
 #ifndef __MAIN__H_
 #define __MAIN__H_
 
-/**
- * Preprocessors.
- * Function prototypes.
- *
- */
 
 #include <stdarg.h>
 #include <unistd.h>
